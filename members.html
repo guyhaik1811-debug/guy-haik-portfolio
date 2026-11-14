@@ -195,6 +195,9 @@
         if (!show("waitlist-btn", m.waitlistUrl)) document.getElementById("soon-note").hidden = false;
       }
       if (m.sampleUrl) document.querySelector("[data-sample-link]").href = m.sampleUrl;
+      [["waitlist-btn", "waitlist_click"], ["join-btn", "join_click"]].forEach(([id, name]) => {
+        document.getElementById(id).addEventListener("click", () => { if (typeof gtag === "function") gtag("event", name); });
+      });
     </script>
   </body>
 </html>
