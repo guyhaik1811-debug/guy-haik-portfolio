@@ -137,7 +137,7 @@ export function initSite(activePage) {
         <li><a href="#experience" data-scroll="experience">Approach</a></li>
         <li><a href="blog.html">Articles</a></li>
         <li><a href="credentials.html">Credentials</a></li>
-           <li><a href="booking.html">Contact</a></li>
+           <li class="nav-contact"><a href="booking.html">Contact</a></li>
         <li></li>
         
       `;
@@ -148,7 +148,7 @@ export function initSite(activePage) {
         <li><a href="index.html#experience">Approach</a></li>
         <li><a href="index.html#articles">Articles</a></li>
         <li><a href="credentials.html">Credentials</a></li>
-           <li><a href="booking.html">Contact</a></li>
+           <li class="nav-contact"><a href="booking.html">Contact</a></li>
         <li></li>
         
       `;
@@ -161,7 +161,7 @@ export function initSite(activePage) {
         ${navLinksHtml}
       </ul>
       </nav>
-<a class="visit-btn" href="${SITE_CONFIG.membership.pageUrl}">${SITE_CONFIG.membership.label}</a>      <button type="button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+<div class="header-actions"><a class="visit-btn" href="${SITE_CONFIG.membership.pageUrl}">${SITE_CONFIG.membership.label}</a><a class="header-cta" href="booking.html">Ask a question</a></div>      <button type="button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
     `;
     
     // Initialize mobile menu
