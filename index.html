@@ -50,164 +50,126 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- Tiny inline override to guarantee Experience heading visibility -->
-    <style>
-      /* ensure .cards-grid section title is never hidden — works with your existing main.css */
-      #experience .section-title {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important; 
-        margin-bottom: 2rem;
-      }
-      /* also ensure the cards grid structure matches your existing design */
-      .cards-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1.5rem;
-        margin: 0;
-      }
-      @media (max-width: 768px) {
-        .cards-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="page-shell">
       <header id="site-header"></header>
       <main class="page page-home">
-        <!-- ================= ABOUT SECTION ================= -->
-        <section id="about" class="unified-about">
-          <div class="about-grid">
-            <!-- Left Column -->
-            <div class="about-content">
-              <h1>Make space for a more meaningful life.</h1>
-              <p class="motto">Thoughtful answers for clarity, perspective, and inner direction.</p>
-              <p class="summary">
-                Explore the patterns, values, questions, and beliefs shaping your life. Guy answers your questions about meaning, spirituality, and inner life to help you slow down, see more clearly, and take your next step with intention.
-              </p>
-              <div class="button-group">
-   <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Send a question</a>                <a href="blog.html" class="btn btn-secondary">Read the articles</a>
-              </div>
-              <div class="social-links">
-                <a href="blog.html" aria-label="Read Guy's articles"><i class="fas fa-pen-nib"></i></a>
-                
-              </div>
-            </div>
-            <!-- Right Column: Portrait gallery -->
-            <div class="about-photo">
-              <div class="photo-gallery" aria-label="Photos of Guy Haik">
-                <figure class="photo-frame photo-card photo-card-wide">
-                  <img src="guy-and-kids.avif" width="980" height="746" decoding="async" alt="Guy Haik with three children" />
-                </figure>
-                <figure class="photo-frame photo-card photo-card-wide">
-                  <img src="guy-portrait-video-call.avif" width="1079" height="604" decoding="async" alt="Guy Haik during a video call" />
-                </figure>
-                <figure class="photo-frame photo-card">
-                  <img src="guy-with-dog-full.avif" width="800" height="1000" loading="lazy" decoding="async" alt="Guy Haik smiling as a dog licks his ear" />
-                </figure>
-                <figure class="photo-frame photo-card">
-                  <img src="guy-portrait-suit-full.avif" width="954" height="1600" loading="lazy" decoding="async" alt="Guy Haik in a light suit" />
-                </figure>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ================= EXPERIENCE SECTION ================= -->
-        <section id="experience">
-          <h2 class="section-title">A grounded space for honest reflection</h2>
-          <div class="cards-grid">
-            <!-- Card 1: My Experience -->
-            <div class="card">
-              <p class="card-eyebrow">The approach</p>
-              <h3>Curious · Human · Practical</h3>
-              <ul class="expertise-list">
-                <li>Make room for what you are really experiencing</li>
-                <li>Notice patterns without reducing yourself to a label</li>
-                <li>Examine the stories and assumptions guiding your choices</li>
-                <li>Leave with a clearer, more honest next step</li>
-              </ul>
-            </div>
-            <!-- Card 2: My Expertise -->
-            <div class="card">
-              <p class="card-eyebrow">What we can explore</p>
-              <h3>Questions that matter</h3>
-              <ul class="expertise-list">
-                <li>Identity, relationships, and recurring emotional patterns</li>
-                <li>Values, purpose, freedom, and the shape of a good life</li>
-                <li>Spiritual questions, practices, and inner life</li>
-                <li>Transitions, decisions, and the courage to change</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- ================= ARTICLES SECTION ================= -->
-        <section id="articles">
-          <h2 class="section-title">Ideas for the inner life</h2>
-          <div class="articles-grid">
-            <div class="article-card">
-              <div class="article-icon">
-                <i class="fas fa-brain"></i>
-              </div>
-              <h3>Psychology in everyday life</h3>
-              <p class="article-description">
-                Notice the emotions, habits, and protective patterns that quietly shape how you move through the world.
-              </p>
-              <a href="post.html?slug=how-to-deal-with-an-angry-person" class="article-link">Read the article →</a>
-            </div>
-
-            <div class="article-card">
-              <div class="article-icon">
-                <i class="fas fa-compass"></i>
-              </div>
-              <h3>Philosophy for real life</h3>
-              <p class="article-description">
-                Use enduring questions about meaning, freedom, and responsibility to find your own orientation.
-              </p>
-              <a href="blog.html" class="article-link">Explore the articles →</a>
-            </div>
-
-            <div class="article-card">
-              <div class="article-icon">
-                <i class="fas fa-sun"></i>
-              </div>
-              <h3>Spirituality without certainty</h3>
-              <p class="article-description">
-                Make room for wonder, doubt, ritual, and connection without forcing a conclusion.
-              </p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform" target="_blank" rel="noopener noreferrer" class="article-link">Ask a question →</a>
-            </div>
-          </div>
-          <div class="articles-cta">
-            <a href="blog.html" class="btn btn-secondary">View all articles</a>
-          </div>
-        </section>
-
-        <!-- ================= CONTACT SECTION ================= -->
-        <section id="contact" class="contact-section">
-          <div class="contact-container">
-            <p class="eyebrow">Begin where you are</p>
-            <h2>Let's make room for the question.</h2>
-            <p class="contact-text">
-              If something in your life feels unclear, repetitive, or ready to change, a thoughtful question can be a useful place to begin.
+        <span id="about" class="hb-anchor"></span>
+        <section class="hb-sec hb-hero" aria-labelledby="home-title">
+          <img class="hb-hero-img" src="home-hero.jpg" width="1080" height="810" fetchpriority="high" decoding="async" alt="View from the upper slopes of a snow-covered volcano, with a lake and distant mountains under a deep blue sky" />
+          <div class="hb-hero-copy">
+            <p class="hb-eyebrow">Reflection · Perspective · Inner life</p>
+            <h1 id="home-title">Make space for a more <em class="hb-acc">meaningful</em> life.</h1>
+            <p class="hb-motto">Thoughtful answers for clarity, perspective, and inner direction.</p>
+            <p class="hb-summary">
+              Explore the patterns, values, questions, and beliefs shaping your life. Guy answers your questions about meaning, spirituality, and inner life to help you slow down, see more clearly, and take your next step with intention.
             </p>
-            <div class="contact-methods">
-              <div class="contact-card">
-                <a data-email-link href="#" aria-label="Email Guy"><i class="fas fa-envelope"></i></a>
-                <h3>Email</h3>
+            <div class="hb-actions">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Send a question →</a>
+              <a href="blog.html" class="btn btn-secondary">Read the articles</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="hb-sec hb-steps" aria-label="How it works">
+          <div class="hb-wrap hb-steps-row">
+            <p class="hb-steps-lead">A thoughtful place to begin</p>
+            <div class="hb-step"><b aria-hidden="true">01</b><span>Share your question</span></div>
+            <div class="hb-step"><b aria-hidden="true">02</b><span>Explore a new perspective</span></div>
+            <div class="hb-step"><b aria-hidden="true">03</b><span>Move forward with intention</span></div>
+          </div>
+        </section>
+
+        <span id="experience" class="hb-anchor"></span>
+        <section class="hb-sec hb-approach" aria-labelledby="approach-title">
+          <div class="hb-wrap">
+            <h2 class="hb-h2" id="approach-title">A grounded space for honest reflection</h2>
+            <div class="hb-two">
+              <div class="hb-panel">
+                <p class="hb-eyebrow">The approach</p>
+                <h3>Curious · Human · Practical</h3>
+                <ul>
+                  <li>Make room for what you are really experiencing</li>
+                  <li>Notice patterns without reducing yourself to a label</li>
+                  <li>Examine the stories and assumptions guiding your choices</li>
+                  <li>Leave with a clearer, more honest next step</li>
+                </ul>
               </div>
-              <div class="contact-card">
-                <a href="booking.html" aria-label="Send Guy a question"><i class="fas fa-question-circle"></i></a>
-                <h3>Send a question</h3>
+              <div class="hb-panel">
+                <p class="hb-eyebrow">What we can explore</p>
+                <h3>Questions that matter</h3>
+                <ul>
+                  <li>Identity, relationships, and recurring emotional patterns</li>
+                  <li>Values, purpose, freedom, and the shape of a good life</li>
+                  <li>Spiritual questions, practices, and inner life</li>
+                  <li>Transitions, decisions, and the courage to change</li>
+                </ul>
               </div>
-              <div class="contact-card">
-                <a data-linkedin-link href="#" aria-label="Guy on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <h3>LinkedIn</h3>
+            </div>
+          </div>
+        </section>
+
+        <span id="articles" class="hb-anchor"></span>
+        <section class="hb-sec hb-articles" aria-labelledby="articles-title">
+          <div class="hb-wrap">
+            <h2 class="hb-h2 hb-h2-rule" id="articles-title">Ideas for the <em class="hb-acc">inner life</em></h2>
+            <div class="hb-cards">
+              <article class="hb-card">
+                <img src="home-card-1.jpg" width="900" height="600" loading="lazy" decoding="async" alt="A lake and forested hills seen from a viewpoint, with distant snow-capped mountains" />
+                <div class="hb-card-body">
+                  <h3>Psychology in everyday life</h3>
+                  <p>Notice the emotions, habits, and protective patterns that quietly shape how you move through the world.</p>
+                  <a class="hb-link" href="post.html?slug=how-to-deal-with-an-angry-person">Read the article →</a>
+                </div>
+              </article>
+              <article class="hb-card">
+                <img src="home-card-2.jpg" width="900" height="600" loading="lazy" decoding="async" alt="Green fields and forest with mountains on the horizon" />
+                <div class="hb-card-body">
+                  <h3>Philosophy for real life</h3>
+                  <p>Use enduring questions about meaning, freedom, and responsibility to find your own orientation.</p>
+                  <a class="hb-link" href="blog.html">Explore the articles →</a>
+                </div>
+              </article>
+              <article class="hb-card">
+                <img src="home-card-3.jpg" width="900" height="600" loading="lazy" decoding="async" alt="A waterfall seen from above, surrounded by green forest" />
+                <div class="hb-card-body">
+                  <h3>Spirituality without certainty</h3>
+                  <p>Make room for wonder, doubt, ritual, and connection without forcing a conclusion.</p>
+                  <a class="hb-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform" target="_blank" rel="noopener noreferrer">Ask a question →</a>
+                </div>
+              </article>
+            </div>
+            <div class="hb-all"><a href="blog.html" class="btn btn-secondary">View all articles</a></div>
+          </div>
+        </section>
+
+        <section class="hb-sec hb-featured" aria-labelledby="featured-title">
+          <div class="hb-wrap">
+            <div class="hb-featured-box">
+              <div>
+                <p class="hb-eyebrow">Featured article</p>
+                <h2 id="featured-title">Why Are We Always Waiting to Start Living?</h2>
+                <p>What we lose when “later” becomes the only time we allow ourselves to enjoy life.</p>
+                <a class="hb-link" href="post.html?slug=why-are-we-always-waiting-to-start-living">Read the article →</a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <span id="contact" class="hb-anchor"></span>
+        <section class="hb-sec hb-contact" aria-labelledby="contact-title">
+          <div class="hb-wrap hb-contact-row">
+            <img class="hb-contact-photo" src="guy-with-dog.avif" width="1280" height="720" loading="lazy" decoding="async" alt="Guy Haik smiling as a dog licks his ear" />
+            <div class="hb-contact-copy">
+              <h2 id="contact-title">Start with a <em>question.</em></h2>
+              <p>If something in your life feels unclear, repetitive, or ready to change, a thoughtful question can be a useful place to begin.</p>
+            </div>
+            <div class="hb-contact-actions">
+              <a href="booking.html" class="btn btn-primary">Send a question →</a>
+              <a href="https://www.linkedin.com/in/guy-haik-78b298202/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Connect on LinkedIn</a>
             </div>
           </div>
         </section>
