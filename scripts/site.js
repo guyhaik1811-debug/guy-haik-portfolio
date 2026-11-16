@@ -58,19 +58,47 @@ export function bindProfileContent() {
 function initMobileMenu() {
   const menuIcon = document.getElementById("menu-icon");
   const navLinks = document.querySelector(".nav-links");
-  
+
   if (menuIcon && navLinks) {
+    const setOpen = (open) => {
+      navLinks.classList.toggle("active", open);
+      menuIcon.setAttribute("aria-expanded", String(open));
+      menuIcon.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    };
+
     menuIcon.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
+      setOpen(!navLinks.classList.contains("active"));
     });
-    
+
     // Close menu when a link is clicked
     navLinks.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-      });
+      link.addEventListener("click", () => setOpen(false));
+    });
+
+    // Close with Escape and return focus to the button
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && navLinks.classList.contains("active")) {
+        setOpen(false);
+        menuIcon.focus();
+      }
     });
   }
+}
+
+function addSkipLink() {
+  const main = document.querySelector("main");
+  if (!main || document.querySelector(".skip-link")) {
+    return;
+  }
+  if (!main.id) {
+    main.id = "main-content";
+  }
+  main.setAttribute("tabindex", "-1");
+  const link = document.createElement("a");
+  link.className = "skip-link";
+  link.href = `#${main.id}`;
+  link.textContent = "Skip to main content";
+  document.body.prepend(link);
 }
 
 function initScrollLinks() {
@@ -82,14 +110,16 @@ function initScrollLinks() {
       const targetId = link.getAttribute("data-scroll");
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
+        targetElement.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
       }
     });
   });
 }
 
 export function initSite(activePage) {
-  document.title = activePage === "index.html" ? SITE_CONFIG.site.title : `${document.title}`;
+  if (!document.title) { document.title = SITE_CONFIG.site.title; }
+
+  addSkipLink();
 
   const header = document.getElementById("site-header");
   const footer = document.getElementById("site-footer");
@@ -126,10 +156,12 @@ export function initSite(activePage) {
     
     header.innerHTML = `
       <a class="logo" href="index.html">${SITE_CONFIG.profile.name}</a>
-      <ul class="nav-links">
+      <nav class="main-nav" aria-label="Main">
+      <ul class="nav-links" id="primary-nav">
         ${navLinksHtml}
       </ul>
-<a class="visit-btn" href="${SITE_CONFIG.membership.pageUrl}">${SITE_CONFIG.membership.label}</a>      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </nav>
+<a class="visit-btn" href="${SITE_CONFIG.membership.pageUrl}">${SITE_CONFIG.membership.label}</a>      <button type="button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
     `;
     
     // Initialize mobile menu

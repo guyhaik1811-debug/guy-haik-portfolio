@@ -1234,3 +1234,59 @@ header.header {
      text-underline-offset: 3px;
      text-decoration-thickness: 1px;
    }
+
+
+/* ============================================
+   ACCESSIBILITY AND MOTION (added November 2026)
+   ============================================ */
+.main-nav {
+  display: contents;
+}
+
+button#menu-icon {
+  background: none;
+  border: 0;
+  padding: 0.25rem;
+  font-family: inherit;
+  line-height: 1;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  z-index: 1000;
+  padding: 0.7rem 1.1rem;
+  background: #111;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+main:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
