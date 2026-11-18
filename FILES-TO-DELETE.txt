@@ -1,0 +1,22 @@
+Delete these 18 files from the repo root on GitHub (after uploading the 3 updated pages):
+
+ac-match1.mp4
+ac-match1.jpg
+lima-concert-1.mp4
+lima-concert-1.jpg
+lima-concert-2.mp4
+lima-concert-2.jpg
+lima-concert-4.mp4
+lima-concert-4.jpg
+suarez-board.mp4
+suarez-board-poster.jpg
+ronaldo.mp4
+ronaldo-poster.jpg
+messi.mp4
+messi-poster.jpg
+warmup.mp4
+warmup-poster.jpg
+plaza-catalunya.mp4
+plaza-catalunya-poster.jpg
+
+Do NOT delete warmup.avif or ronaldo-shirt.avif: they are photos still used on the Barcelona page.
