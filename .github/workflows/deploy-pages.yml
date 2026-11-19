@@ -34,13 +34,6 @@ jobs:
       - name: Build blog index
         run: npm run build:posts
 
-      - name: Build TinaCMS admin
-        run: npm run build:admin
-        env:
-          TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
-          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-          TINA_BRANCH: main
-
       - name: Prepare Pages artifact
         run: |
           mkdir -p _site
@@ -71,6 +64,5 @@ jobs:
       - name: Deploy Pages artifact
         id: deployment
         uses: actions/deploy-pages@v4
-        with: 
-          timeout: 1800000 
-        
+        with:
+          timeout: 1800000
