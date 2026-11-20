@@ -232,7 +232,7 @@
                 </details>
               </div>
             </details>
-            <details>
+            <details id="coffee">
               <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-mug-hot mb-ico"></i>Coffee</summary>
               <p class="mb-note">Coffee shops I have been to and would go back to, and what to order there.</p>
               <div class="mb-kids">
@@ -281,6 +281,11 @@
         if (!show("waitlist-btn", m.waitlistUrl)) document.getElementById("soon-note").hidden = false;
       }
       if (m.sampleUrl) document.querySelector("[data-sample-link]").href = m.sampleUrl;
+      const target = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+      if (target && target.tagName === "DETAILS") {
+        for (let d = target; d; d = d.parentElement && d.parentElement.closest("details")) d.open = true;
+        target.scrollIntoView();
+      }
       [["waitlist-btn", "waitlist_click"], ["join-btn", "join_click"]].forEach(([id, name]) => {
         document.getElementById(id).addEventListener("click", () => { if (typeof gtag === "function") gtag("event", name); });
       });
