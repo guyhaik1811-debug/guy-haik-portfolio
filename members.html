@@ -35,6 +35,7 @@
       .mb-leaf span.mb-ico { color: var(--muted); }
       .mb-tag { margin-left: auto; font-size: 0.75rem; font-weight: 500; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0.1rem 0.6rem; white-space: nowrap; }
       .mb-item { position: relative; }
+      .mb-tree details { scroll-margin-top: 1rem; }
       @keyframes mb-flash { 0%, 100% { background: transparent; } 20%, 60% { background: rgba(240, 180, 40, 0.5); } 40%, 80% { background: rgba(240, 180, 40, 0.12); } }
       .mb-leaf.mb-flash { animation: mb-flash 3s ease-in-out 1; }
       @media (prefers-reduced-motion: reduce) { .mb-leaf.mb-flash { animation: none; background: rgba(240, 180, 40, 0.4); } }
@@ -296,7 +297,12 @@
           target.scrollIntoView();
         } else if (target && target.classList.contains("mb-leaf")) {
           for (let d = target.closest("details"); d; d = d.parentElement && d.parentElement.closest("details")) d.open = true;
-          const center = () => target.scrollIntoView({ block: "center" });
+          const group = target.closest("details");
+          const center = () => {
+            group.scrollIntoView({ block: "start", behavior: "instant" });
+            const r = target.getBoundingClientRect();
+            if (r.top < 0 || r.bottom > window.innerHeight) target.scrollIntoView({ block: "center", behavior: "instant" });
+          };
           center();
           const flash = () => { center(); target.classList.remove("mb-flash"); void target.offsetWidth; target.classList.add("mb-flash"); setTimeout(() => target.classList.remove("mb-flash"), 3000); };
           const go = () => setTimeout(flash, 250);
