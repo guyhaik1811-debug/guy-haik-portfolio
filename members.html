@@ -36,7 +36,7 @@
       .mb-tag { margin-left: auto; font-size: 0.75rem; font-weight: 500; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0.1rem 0.6rem; white-space: nowrap; }
       .mb-item { position: relative; }
       @keyframes mb-flash { 0%, 100% { background: transparent; } 20%, 60% { background: rgba(240, 180, 40, 0.5); } 40%, 80% { background: rgba(240, 180, 40, 0.12); } }
-      .mb-leaf.mb-flash { animation: mb-flash 2.4s ease-in-out 1; }
+      .mb-leaf.mb-flash { animation: mb-flash 3s ease-in-out 1; }
       @media (prefers-reduced-motion: reduce) { .mb-leaf.mb-flash { animation: none; background: rgba(240, 180, 40, 0.4); } }
       .mb-brief { display: block; margin: -0.25rem 0.6rem 0.5rem 2.5rem; font-size: 0.85rem; line-height: 1.45; color: var(--muted); }
       @media (hover: hover) and (pointer: fine) and (min-width: 760px) {
@@ -296,9 +296,11 @@
           target.scrollIntoView();
         } else if (target && target.classList.contains("mb-leaf")) {
           for (let d = target.closest("details"); d; d = d.parentElement && d.parentElement.closest("details")) d.open = true;
-          target.scrollIntoView({ block: "center" });
-          target.classList.add("mb-flash");
-          setTimeout(() => target.classList.remove("mb-flash"), 3000);
+          const center = () => target.scrollIntoView({ block: "center" });
+          center();
+          const flash = () => { center(); target.classList.remove("mb-flash"); void target.offsetWidth; target.classList.add("mb-flash"); setTimeout(() => target.classList.remove("mb-flash"), 3000); };
+          const go = () => setTimeout(flash, 250);
+          if (document.readyState === "complete") go(); else window.addEventListener("load", go, { once: true });
         }
       };
       openTarget();
