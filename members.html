@@ -35,6 +35,9 @@
       .mb-leaf span.mb-ico { color: var(--muted); }
       .mb-tag { margin-left: auto; font-size: 0.75rem; font-weight: 500; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0.1rem 0.6rem; white-space: nowrap; }
       .mb-item { position: relative; }
+      @keyframes mb-flash { 0%, 100% { background: transparent; } 20%, 60% { background: rgba(240, 180, 40, 0.5); } 40%, 80% { background: rgba(240, 180, 40, 0.12); } }
+      .mb-leaf.mb-flash { animation: mb-flash 2.4s ease-in-out 1; }
+      @media (prefers-reduced-motion: reduce) { .mb-leaf.mb-flash { animation: none; background: rgba(240, 180, 40, 0.4); } }
       .mb-brief { display: block; margin: -0.25rem 0.6rem 0.5rem 2.5rem; font-size: 0.85rem; line-height: 1.45; color: var(--muted); }
       @media (hover: hover) and (pointer: fine) and (min-width: 760px) {
         .mb-brief { position: absolute; left: 2.2rem; bottom: calc(100% - 4px); z-index: 20; width: max-content; max-width: min(21rem, calc(100% - 3rem)); margin: 0; padding: 0.6rem 0.8rem; background: var(--surface-strong, #fff); color: var(--text); border: 1px solid var(--line-strong, var(--line)); border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s; pointer-events: none; }
@@ -237,11 +240,11 @@
               <p class="mb-note">Coffee shops I have been to and would go back to.</p>
               <div class="mb-kids">
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-coffee-ushuaia" href="coffee-ushuaia.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Ushuaia<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" id="coffee-ushuaia" aria-describedby="brief-coffee-ushuaia" href="coffee-ushuaia.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Ushuaia<span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-coffee-ushuaia">A layered coffee in the centre of Ushuaia on a Saturday in October 2017, found again from the photo's location, with what the listing says today.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-coffee-salento"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Salento<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" id="coffee-salento" aria-describedby="brief-coffee-salento"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Salento<span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-coffee-salento">Two coffees on the main square of Salento after a day in the Cocora Valley, with the address, hours and what I could not find.</span>
                         </div>
               </div>
@@ -285,11 +288,21 @@
         if (!show("waitlist-btn", m.waitlistUrl)) document.getElementById("soon-note").hidden = false;
       }
       if (m.sampleUrl) document.querySelector("[data-sample-link]").href = m.sampleUrl;
-      const target = location.hash ? document.getElementById(location.hash.slice(1)) : null;
-      if (target && target.tagName === "DETAILS") {
-        for (let d = target; d; d = d.parentElement && d.parentElement.closest("details")) d.open = true;
-        target.scrollIntoView();
-      }
+      const openTarget = () => {
+        document.querySelectorAll(".mb-flash").forEach((e) => e.classList.remove("mb-flash"));
+        const target = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+        if (target && target.tagName === "DETAILS") {
+          for (let d = target; d; d = d.parentElement && d.parentElement.closest("details")) d.open = true;
+          target.scrollIntoView();
+        } else if (target && target.classList.contains("mb-leaf")) {
+          for (let d = target.closest("details"); d; d = d.parentElement && d.parentElement.closest("details")) d.open = true;
+          target.scrollIntoView({ block: "center" });
+          target.classList.add("mb-flash");
+          setTimeout(() => target.classList.remove("mb-flash"), 3000);
+        }
+      };
+      openTarget();
+      window.addEventListener("hashchange", openTarget);
       [["waitlist-btn", "waitlist_click"], ["join-btn", "join_click"]].forEach(([id, name]) => {
         document.getElementById(id).addEventListener("click", () => { if (typeof gtag === "function") gtag("event", name); });
       });
