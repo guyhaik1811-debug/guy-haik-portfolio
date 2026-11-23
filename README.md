@@ -8,7 +8,7 @@ Open `scripts/config.js` and add the public values for `email`, `linkedin`, and 
 
 ### Questions
 
-The Contact page links to a Google Form where visitors send written questions. To change the form, update the form link in `booking.html` and `index.html`.
+The question form is closed. `booking.html` shows a short notice.
 
 ## Local preview
 
