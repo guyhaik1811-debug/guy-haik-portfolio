@@ -62,7 +62,7 @@ Money comes and goes. When Bob Marley was asked in an interview whether he was a
 
 When I was a kid I admired educated people. Now I realize that well-mannered people are better than well-educated ones. Things change.
 
-Whatever the arrangement, I will state it clearly before you send a question or pay anything.
+Whatever the arrangement, I will state it clearly before you pay anything.
 
 ## 5. Will the guide try to sell you something?
 

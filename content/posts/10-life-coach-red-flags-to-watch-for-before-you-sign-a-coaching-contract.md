@@ -122,7 +122,7 @@ Before committing, understand the fees, payment arrangements, cancellation terms
 
 What to ask: “What exactly do I pay for, what are the terms, and how do I stop if I want to?”
 
-Money makes the world go round, unfortunately, and it is what it is. For me it isn’t the point, and whatever the arrangement is, I will state it clearly before you send a question or pay anything.
+Money makes the world go round, unfortunately, and it is what it is. For me it isn’t the point, and whatever the arrangement is, I will state it clearly before you pay anything.
 
 ## One red flag doesn’t automatically mean someone is a bad guide
 
