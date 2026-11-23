@@ -45,8 +45,6 @@
         .mb-item:hover .mb-brief, .mb-item:focus-within .mb-brief { opacity: 1; visibility: visible; transform: none; }
       }
       .mb-note { margin: 0.2rem 0.6rem 0.6rem 1.6rem; font-size: 0.9rem; color: var(--muted); }
-      .mb-photo { margin: 0 0.6rem 0.8rem 1.6rem; max-width: 280px; }
-      .mb-photo img { display: block; width: 100%; height: auto; border-radius: 12px; }
       .mb-locked { cursor: default; }
       .mb-locked:hover { background: none; }
       .mb-notice { text-align: center; color: var(--muted); font-size: 0.95rem; max-width: 560px; margin: 0 auto 0.5rem; }
@@ -57,6 +55,11 @@
       .mb-side { display: none; }
       @media (min-width: 1400px) {
         .mb-side { display: block; position: absolute; top: 21rem; left: calc(50% - 660px); width: 220px; height: 300px; object-fit: cover; border-radius: 16px; opacity: 0.38; pointer-events: none; -webkit-mask-image: radial-gradient(ellipse at center, #000 55%, transparent 100%); mask-image: radial-gradient(ellipse at center, #000 55%, transparent 100%); }
+      }
+      .mb-side-r { display: none; }
+      @media (min-width: 1400px) {
+        #coffee { position: relative; }
+        .mb-side-r { display: block; position: absolute; top: 0; left: calc(100% + 110px); width: 280px; height: 260px; object-fit: cover; object-position: 55% center; border-radius: 16px; opacity: 0.38; pointer-events: none; -webkit-mask-image: radial-gradient(ellipse at center, #000 55%, transparent 100%); mask-image: radial-gradient(ellipse at center, #000 55%, transparent 100%); }
       }
       [hidden] { display: none !important; }
     </style>
@@ -283,8 +286,8 @@
             </details>
             <details id="coffee" open>
               <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-mug-hot mb-ico"></i>Coffee</summary>
+              <img class="mb-side-r" src="members-coffee.jpg" alt="" aria-hidden="true" loading="lazy" />
               <p class="mb-note">Coffee shops I have been to and would go back to.</p>
-              <figure class="mb-photo"><img src="members-coffee.jpg" alt="A paper cup of coffee with a chocolate web pattern in the foam, on a light wooden table in a café in Salento" loading="lazy" width="900" height="489" /></figure>
               <div class="mb-kids">
                         <div class="mb-item">
                           <a class="mb-leaf" id="coffee-ushuaia" aria-describedby="brief-coffee-ushuaia" href="coffee-ushuaia.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Ushuaia<span class="mb-tag">Free sample</span></a>
