@@ -113,10 +113,6 @@ If you are not seeing progress, talk about it. Revisit your goals, ask questions
 
 Good guidance should leave you better able to guide yourself afterward. The goal isn’t simply to have more conversations. It is to make those conversations useful in the life you are living outside them.
 
-## Want to ask me something?
-
-If you are thinking about asking me something, you are welcome to [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform). I am happy to explain how I work and answer questions, so you can decide whether it is the right fit for you.
-
 ## Sources and notes
 
 - Shunryu Suzuki, *Zen Mind, Beginner’s Mind* (1970), the opening of the prologue on the beginner’s mind.

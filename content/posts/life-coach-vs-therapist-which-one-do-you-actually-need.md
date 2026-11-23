@@ -110,10 +110,6 @@ If you are dealing with a mental-health concern or significant distress, therapy
 
 Don’t choose a guide just because you think you “should” solve it alone, and don’t choose therapy just because you are going through a hard time. Start with the problem, and then find the kind of support that fits it.
 
-## Want to ask me something?
-
-If you are unsure whether what you are going through calls for a guide, you don’t have to commit to anything. You are welcome to [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me what is on your mind.
-
 If I think another kind of support would be more appropriate for you, I will tell you that too. The goal isn’t to get you to rely on me. The goal is to figure out what would actually help.
 
 ## Sources and notes

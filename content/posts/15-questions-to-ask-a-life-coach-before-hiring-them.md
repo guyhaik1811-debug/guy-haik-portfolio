@@ -150,8 +150,6 @@ There is one final question worth considering, even if you don’t ask it direct
 
 For me, good guidance should leave you better able to guide yourself afterward. That doesn’t mean you will never need support again. Nobody has to figure everything out alone, and there is nothing wrong with asking for help when you need it. But it should help you understand your situation, decide with more clarity, recognize patterns, and act on the things that matter to you.
 
-
-
 ## One last thought: when to walk away
 
 When it comes to emotional intelligence, one of the greatest signs of strength is knowing when to speak and when to walk away. In a world where everyone wants to be right, winning an argument can feel more important than understanding another person. But how often does an argument truly change someone’s mind, and how much peace do we sacrifice trying to prove something to someone who has already decided not to listen?
@@ -164,13 +162,7 @@ You can’t control how other people think, speak or behave. You can control how
 
 What do you think? Is walking away from an unnecessary argument a sign of wisdom, or should we always try to make others understand our perspective?
 
-
-## Want to ask me something?
-
-You are welcome to ask me these questions directly. I would rather you understand my approach and what to expect before you decide anything. You don’t need to commit to anything simply because we have exchanged messages.
-
-If you would like to ask, [send a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me what is on your mind. Before trusting any guide, ask questions. Including me.
-   ## Sources and notes
+## Sources and notes
 
    - Don Miguel Ruiz, The Four Agreements (1997): the second agreement is “don’t take anything personally.”
    - Benjamin Franklin, Poor Richard’s Almanack (1746). See [The Franklin Institute](https://fi.edu/benjamin-franklin/famous-quotes).

@@ -137,11 +137,7 @@ There is a saying that a wise person can learn more from a foolish question than
 
 If you are curious but unsure whether guidance is right for you, a first conversation can be a useful place to start. You can explain what you are looking for, learn about the person’s approach, ask questions, and decide whether to take things further. You don’t need to have everything figured out beforehand, and you shouldn’t feel obligated to buy anything because you have had a conversation.
 
-If you would like to talk with me, you are welcome to send a question and tell me what is on your mind. I will explain how I approach things, and you will have the opportunity to ask questions before deciding whether you would like to continue. There is no need to arrive with a perfect plan or a list of goals.
-
 The purpose isn’t to convince you that you need guidance. It is to help us work out whether it makes sense for you. And knowing yourself, as the saying goes, takes a lifetime.
-
-[Send a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform)
 
 ## Sources and notes
 

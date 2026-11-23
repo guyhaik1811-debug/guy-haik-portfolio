@@ -90,10 +90,6 @@ I also believe in practice that becomes natural. It is like a tornado kick: if y
 
 And the relationship must rest on respect. If it loses the essence of respect, there may be no point in continuing. Be the reason someone still believes in goodness, and it may come back to you someday. That is how I understand karma: doing good without expecting anything in return.
 
-## Want to ask me something?
-
-If you are unsure whether your current relationship is working, or what you would want from the next one, you are welcome to [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me what is on your mind.
-
 ## Sources and notes
 
 - The boiling-frog story and the parable of the village and the dog are folk stories with no known author. Real frogs tend to jump out of slowly heated water.

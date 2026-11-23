@@ -76,10 +76,6 @@ One more thing about growth. Imagine someone who finally starts working on himse
 
 Noel Burch, of Gordon Training International, described four stages of learning a skill in the 1970s. The first is not knowing what you don’t know. The second is realizing it, and it is the most uncomfortable, and where many people quit. Kruger and Dunning found in 1999 that people with low skill in an area tend to overestimate their ability, and awareness grows with skill. So the person who never questions himself may feel fine, while the person who is actually changing may feel lost. That discomfort isn’t proof that growth is failing. It may be proof that it has started.
 
-## Want to ask me something?
-
-If you are not sure which kind of support fits you, you are welcome to [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me what you are dealing with. If another kind of support would suit you better, I will tell you.
-
 ## Sources and notes
 
 - Justin Kruger and David Dunning, “Unskilled and Unaware of It: How Difficulties in Recognizing One’s Own Incompetence Lead to Inflated Self-Assessments,” *Journal of Personality and Social Psychology*, 77(6), 1999.

@@ -94,10 +94,6 @@ You won’t always get it right, and neither will anyone else. Emotional intelli
 
 Sometimes the strongest response to anger isn’t greater force. It is the ability to stay calm and curious enough to see the human being underneath the emotion, without ego. And sometimes, that is where the possibility of change begins.
 
-## Want to ask me something?
-
-If you are dealing with someone else’s anger, or your own, you are welcome to [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me what is on your mind.
-
 ## Sources and notes
 
 - Terry Dobson’s account of the drunk man on the Tokyo train, an excerpt from his book *Aikido and the New Warrior*, reprinted in [The Sun](https://www.thesunmagazine.org/article/2844).

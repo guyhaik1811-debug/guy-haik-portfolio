@@ -91,10 +91,6 @@ Some people keep their distance, and it doesn’t necessarily mean they don’t 
 
 My suggestion is not to be anti-social, but to be selectively social. You are shaped by your environment, so choose it with care.
 
-## Want to ask me something?
-
-If you are not sure what style suits you, you are welcome to [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me how you like to be spoken to. I will tell you honestly whether I can adapt to it.
-
 ## Sources and notes
 
 - This article is general information. It is not medical or psychological advice and does not replace a licensed professional. See the [disclaimer](disclaimer.html).

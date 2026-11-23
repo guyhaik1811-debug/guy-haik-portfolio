@@ -116,10 +116,6 @@ Save some money every week, it doesn’t matter how much. Listen to your parents
 
 You can clarify your goals, change the approach, talk openly with your guide, take a pause, or move on to someone who fits better. If what you are going through feels heavy, a licensed therapist may be the right next step.
 
-## Want to ask me something?
-
-If you are unsure whether what you are getting is working, or what you would want from the next step, you are welcome to [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me what is on your mind.
-
 ## Sources and notes
 
 - “Honor your father and your mother”: Exodus 20:12. See [Sefaria](https://www.sefaria.org/Exodus.20.12).

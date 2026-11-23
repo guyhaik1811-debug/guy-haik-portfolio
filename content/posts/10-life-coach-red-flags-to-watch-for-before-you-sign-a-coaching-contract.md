@@ -162,10 +162,6 @@ Be cautious of pressure, unrealistic guarantees, and anyone who makes you feel t
 
 And if someone doesn’t feel right for you, you are allowed to say no. That is true of any guide, including me.
 
-## Want to ask me something?
-
-You are welcome to ask me about my approach before deciding anything. You don’t need to take my word for it. Ask questions, and make your own decision. If you would like to, [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me what is on your mind.
-
 ## Sources and notes
 
 - Maimonides on moderation: his medical and ethical writings, including the Mishneh Torah (Hilchot De’ot), discuss the “middle path”.

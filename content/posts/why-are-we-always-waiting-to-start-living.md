@@ -75,10 +75,6 @@ The future deserves our preparation, but the present deserves our attention. May
 
 Eventually, all of us will reach the end of our lives. The question is not whether we will get there. The question is what we will have done along the way.
 
-## Want to ask me something?
-
-If something here spoke to you, or you are postponing something and would like another perspective, you are welcome to [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me what is on your mind.
-
 ## Sources and notes
 
 - This article is general reflection. It is not financial, medical or psychological advice and does not replace a licensed professional. See the [disclaimer](disclaimer.html).

@@ -113,10 +113,6 @@ There isn’t one answer. If you mainly want to learn from someone else’s expe
 
 The better question isn’t “Which one is better?”. It is “What kind of help do I actually need right now?”
 
-## Want to ask me something?
-
-If you are feeling stuck and aren’t sure whether you need advice, perspective, or simply someone to help you think things through, you are welcome to [send me a question](https://docs.google.com/forms/d/e/1FAIpQLSfRAXVXx8j0mZgRjkmDYOhasH-iW40R7oyusPYSMs02FRHUDA/viewform) and tell me what is on your mind.
-
 My goal isn’t to tell you how to live your life. It is to help you understand what you want, look at your options, and move toward decisions you can actually own.
 
 ## Sources and notes
