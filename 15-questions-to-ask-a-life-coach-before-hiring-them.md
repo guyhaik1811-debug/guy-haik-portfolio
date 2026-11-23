@@ -100,15 +100,15 @@ There is a parable that makes me think about this. A man holds a woman’s hand 
 
 Some relationships involve weekly conversations, others work better with a different rhythm. The right arrangement depends on your goals, availability and budget. More frequent isn’t automatically better, and you shouldn’t feel you must commit to an intensive schedule to make progress.
 
-My answer: when I was a private guitar teacher, many students wanted to learn almost daily, and some twice a week. It is like asking someone whether his low kick is good. You are the one doing it, so you need to feel it. I will do my best to adapt to your schedule, and I expect the same from the other side. With written questions there is no schedule at all: you send a question whenever you want.
+My answer: when I was a private guitar teacher, many students wanted to learn almost daily, and some twice a week. It is like asking someone whether his low kick is good. You are the one doing it, so you need to feel it. I will do my best to adapt to your schedule, and I expect the same from the other side.
 
 ## 11. What about the money?
 
 Discuss the financial side before committing. Find out whether there is a cost, how payment works, whether there are packages or extra charges, and what the rules are for stopping. You should understand exactly what you are getting before you pay anything.
 
-My answer: I don’t really believe in heavy contracts. I prefer to work with someone I trust, without the paper stuff. The simplest option is the written one: you send me a question through the site and I answer by email, based on what I learned at university, the books I read, street smarts, Judaism studies and my personal outlook. It is also the best option for anyone with a tight budget. It is less like “please walk me home” and more like “give me the details and the map, so I can find my way home myself.”
+My answer: I don’t really believe in heavy contracts. I prefer to work with someone I trust, without the paper stuff.
 
-I believe money isn’t what drives me, and the point is to help others. Whatever the arrangement, I will state it clearly before you send a question or pay anything.
+I believe money isn’t what drives me, and the point is to help others. Whatever the arrangement, I will state it clearly before you pay anything.
 
 ## 12. Can I stop if it isn’t working for me?
 
