@@ -34,6 +34,10 @@ async function initBlogPage() {
     if (posts.length === 0) {
       blogList.innerHTML = '<p style="text-align:center; padding:2rem; color: var(--muted);">No posts found in this category yet. Check back soon!</p>';
     } else {
+      // Pinned articles are shown first, in this order. The rest keep their usual order.
+      const pinnedSlugs = ["why-are-we-always-waiting-to-start-living", "how-to-deal-with-an-angry-person"];
+      const pinned = pinnedSlugs.map((slug) => posts.find((p) => p.slug === slug)).filter(Boolean);
+      posts = [...pinned, ...posts.filter((p) => !pinnedSlugs.includes(p.slug))];
       blogList.innerHTML = posts.map(renderPostListItem).join("");
     }
     
