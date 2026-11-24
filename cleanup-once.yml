@@ -1,0 +1,49 @@
+name: One-time cleanup of unused files
+
+# Run by hand from the Actions tab. Reads cleanup-list.txt and deletes each listed
+# file ONLY if no other file in the repository mentions its name. Then it commits
+# and starts the normal site deploy. Delete this file and cleanup-list.txt afterwards.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Delete the listed files that nothing references
+        run: |
+          removed=0; kept=0; missing=0
+          while IFS= read -r f; do
+            case "$f" in ''|\#*) continue ;; esac
+            case "$f" in */*) echo "SKIP (path not allowed): $f"; continue ;; esac
+            case "${f,,}" in
+              *.jpg|*.jpeg|*.png|*.avif|*.webp|*.gif|*.mp4) ;;
+              *) echo "SKIP (not a media file): $f"; continue ;;
+            esac
+            if [ ! -f "$f" ]; then echo "missing: $f"; missing=$((missing+1)); continue; fi
+            if git grep -I -q -F -- "$f" -- . ':(exclude)cleanup-list.txt' ':(exclude).github'; then
+              echo "KEEP (still referenced): $f"; kept=$((kept+1))
+            else
+              git rm -q -- "$f"; removed=$((removed+1)); echo "removed: $f"
+            fi
+          done < cleanup-list.txt
+          echo "Removed $removed, kept $kept, missing $missing" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit and start the deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --cached --quiet; then echo "Nothing to commit."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Remove unused media files"
+          git push
+          gh workflow run deploy-pages.yml
