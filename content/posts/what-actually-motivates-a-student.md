@@ -4,7 +4,7 @@ slug: what-actually-motivates-a-student
 summary: 'We use the word motivation all the time without asking what it means. Four ideas from educational psychology on rewards, needs, goals and classrooms, in plain English, with sources you can check.'
 author: Guy Haik
 publishedAt: 2026-11-24T00:00:00.000Z
-draft: true
+draft: false
 tags:
   - motivation
   - education
