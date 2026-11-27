@@ -45,6 +45,8 @@
         .mb-item:hover .mb-brief, .mb-item:focus-within .mb-brief { opacity: 1; visibility: visible; transform: none; }
       }
       .mb-note { margin: 0.2rem 0.6rem 0.6rem 1.6rem; font-size: 0.9rem; color: var(--muted); }
+      .mb-kind { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin-left: 0.2rem; }
+      .mb-kind-guide { color: var(--text, inherit); }
       .mb-locked { cursor: default; }
       .mb-locked:hover { background: none; }
       .mb-notice { text-align: center; color: var(--muted); font-size: 0.95rem; max-width: 560px; margin: 0 auto 0.5rem; }
@@ -79,69 +81,69 @@
             </p>
           </div>
 
-          <p class="mb-notice">The full guides open to members soon. The free samples are open to read now.</p>
+          <p class="mb-notice">Every chapter is marked as a Guide or a Diary. A guide has decisions, prices and recommendations. A diary is my account of what happened, with what I do not remember. The full chapters open to members soon, and the free samples are open to read now.</p>
 
           <div class="mb-tree" aria-label="Members content">
             <details open>
-              <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-plane-departure mb-ico"></i>Journeys<span class="mb-tag">46 guides</span></summary>
+              <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-plane-departure mb-ico"></i>Journeys<span class="mb-tag">5 guides, 41 diaries</span></summary>
               <div class="mb-kids">
                 <details>
-                  <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-building mb-ico"></i>Barcelona<span class="mb-tag">1 guide</span></summary>
+                  <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-building mb-ico"></i>Barcelona<span class="mb-tag">1 diary</span></summary>
                   <div class="mb-kids">
                     <div class="mb-item">
-                      <a class="mb-leaf" aria-describedby="brief-barcelona" href="barcelona.html" data-sample-link><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Travel diary, Friday to Monday<span class="mb-tag">Free sample</span></a>
+                      <a class="mb-leaf" aria-describedby="brief-barcelona" href="barcelona.html" data-sample-link><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Travel diary, Friday to Monday<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Free sample</span></a>
                       <span class="mb-brief" id="brief-barcelona">A long weekend in Barcelona in December 2016: the Sagrada Família, Montjuïc, El Clásico at Camp Nou and a day trip to Vall de Núria.</span>
                     </div>
                   </div>
                 </details>
                 <details>
-                  <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-globe-americas mb-ico"></i>South America<span class="mb-tag">36 guides</span></summary>
+                  <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-globe-americas mb-ico"></i>South America<span class="mb-tag">4 guides, 32 diaries</span></summary>
                   <div class="mb-kids">
                     <details>
-                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Peru<span class="mb-tag">9 guides</span></summary>
+                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Peru<span class="mb-tag">4 guides, 5 diaries</span></summary>
                       <div class="mb-kids">
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-peru-lima" href="peru-lima.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Lima<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-peru-lima" href="peru-lima.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Lima<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-peru-lima">How I packed for six months, landing on September 19, a stadium concert, and the places people recommended that I did not visit.</span>
                         </div>
                         <details>
                           <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-folder-open mb-ico"></i>Huaraz region<span class="mb-tag">3 guides</span></summary>
                           <div class="mb-kids">
                             <div class="mb-item">
-                              <a class="mb-leaf" aria-describedby="brief-peru-huaraz" href="peru-huaraz.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Huaraz<span class="mb-tag">Free sample</span></a>
+                              <a class="mb-leaf" aria-describedby="brief-peru-huaraz" href="peru-huaraz.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Huaraz<span class="mb-kind mb-kind-guide">Guide</span><span class="mb-tag">Free sample</span></a>
                               <span class="mb-brief" id="brief-peru-huaraz">The night bus from Lima, where to stay, why people come here (the Huayhuash trek), agencies, and what I would do differently.</span>
                             </div>
                             <div class="mb-item">
-                              <a class="mb-leaf" aria-describedby="brief-peru-pastoruri" href="peru-pastoruri.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Pastoruri Glacier<span class="mb-tag">Free sample</span></a>
+                              <a class="mb-leaf" aria-describedby="brief-peru-pastoruri" href="peru-pastoruri.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Pastoruri Glacier<span class="mb-kind mb-kind-guide">Guide</span><span class="mb-tag">Free sample</span></a>
                               <span class="mb-brief" id="brief-peru-pastoruri">A day trip to the glacier, with prices and access in a dated box, a note on how much ice is left, and what I would do differently.</span>
                             </div>
                             <div class="mb-item">
-                              <a class="mb-leaf" aria-describedby="brief-peru-laguna-paron" href="peru-laguna-paron.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Laguna Parón<span class="mb-tag">Free sample</span></a>
+                              <a class="mb-leaf" aria-describedby="brief-peru-laguna-paron" href="peru-laguna-paron.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Laguna Parón<span class="mb-kind mb-kind-guide">Guide</span><span class="mb-tag">Free sample</span></a>
                               <span class="mb-brief" id="brief-peru-laguna-paron">A hike to the lake near Huaraz with my photos and video, the access situation in a dated box, and what I would do differently.</span>
                             </div>
                           </div>
                         </details>
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-peru-ica" href="peru-ica.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Ica and Huacachina<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-peru-ica" href="peru-ica.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Ica and Huacachina<span class="mb-kind mb-kind-guide">Guide</span><span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-peru-ica">Dune buggy and sandboarding in the dunes, dated safety news from 2025 and 2026, and what I would do differently.</span>
                         </div>
                         <details>
-                          <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-folder-open mb-ico"></i>Cusco region<span class="mb-tag">4 guides</span></summary>
+                          <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-folder-open mb-ico"></i>Cusco region<span class="mb-tag">4 diaries</span></summary>
                           <div class="mb-kids">
                             <div class="mb-item">
-                              <div class="mb-leaf mb-locked" aria-describedby="brief-peru-cusco"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Cusco<span class="mb-tag">Members</span></div>
+                              <div class="mb-leaf mb-locked" aria-describedby="brief-peru-cusco"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Cusco<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                               <span class="mb-brief" id="brief-peru-cusco">The altitude, hostels, a market, the White Christ viewpoint, a World Cup qualifier in the plaza and a Tarzan swing.</span>
                             </div>
                             <div class="mb-item">
-                              <div class="mb-leaf mb-locked" aria-describedby="brief-peru-inca-jungle"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Inca Jungle and Aguas Calientes<span class="mb-tag">Members</span></div>
+                              <div class="mb-leaf mb-locked" aria-describedby="brief-peru-inca-jungle"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Inca Jungle and Aguas Calientes<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                               <span class="mb-brief" id="brief-peru-inca-jungle">The alternative route to Machu Picchu: cycling, rafting, a zipline course and walking, ending with an evening in Aguas Calientes.</span>
                             </div>
                             <div class="mb-item">
-                              <div class="mb-leaf mb-locked" aria-describedby="brief-peru-machu-picchu"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Machu Picchu<span class="mb-tag">Members</span></div>
+                              <div class="mb-leaf mb-locked" aria-describedby="brief-peru-machu-picchu"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Machu Picchu<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                               <span class="mb-brief" id="brief-peru-machu-picchu">Walking up at dawn, fog and llamas, a climb up one of the mountains beside the ruins, with research boxes on tickets, rules and the walk.</span>
                             </div>
                             <div class="mb-item">
-                              <div class="mb-leaf mb-locked" aria-describedby="brief-peru-ausangate"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Ausangate Seven Lakes<span class="mb-tag">Members</span></div>
+                              <div class="mb-leaf mb-locked" aria-describedby="brief-peru-ausangate"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Ausangate Seven Lakes<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                               <span class="mb-brief" id="brief-peru-ausangate">A day among glacier lakes near Ausangate, from a high valley to a hot spring, with notes on route, season and cost.</span>
                             </div>
                           </div>
@@ -149,143 +151,143 @@
                       </div>
                     </details>
                     <details>
-                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Argentina<span class="mb-tag">4 guides</span></summary>
+                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Argentina<span class="mb-tag">4 diaries</span></summary>
                       <div class="mb-kids">
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" id="argentina-ushuaia" aria-describedby="brief-argentina-ushuaia"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Ushuaia<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" id="argentina-ushuaia" aria-describedby="brief-argentina-ushuaia"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Ushuaia<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-argentina-ushuaia">Five days at the bottom of Argentina in October 2017: Tierra del Fuego National Park, Laguna Esmeralda, a Beagle Channel boat trip, and the airport scramble that almost cost me the flight.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-argentina-bariloche"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Bariloche<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-argentina-bariloche"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Bariloche<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-argentina-bariloche">Three buses from El Calafate, then Lago Nahuel Huapi in November 2017: a chairlift, a tandem skydive, a hostel stop in Lago Puelo, and what I would do differently.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-argentina-rosario"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Rosario<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-argentina-rosario"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Rosario<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-argentina-rosario">Several quiet days on the Paraná River in November 2017: the riverfront, empanadas in a hostel kitchen, a day at an island beach, the Colectividades festival and the train to Buenos Aires, with what runs today.</span>
                         </div>
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-argentina-buenos-aires" href="argentina-buenos-aires.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Buenos Aires<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-argentina-buenos-aires" href="argentina-buenos-aires.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Buenos Aires<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-argentina-buenos-aires">A Milhouse hostel, a karaoke night and a Coldplay concert in La Plata in November 2017, with the stadium, the trains and the hostels as they are today.</span>
                         </div>
                       </div>
                     </details>
                     <details>
-                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Chile<span class="mb-tag">3 guides</span></summary>
+                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Chile<span class="mb-tag">3 diaries</span></summary>
                       <div class="mb-kids">
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-chile-punta-arenas-puerto-natales"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Punta Arenas and Puerto Natales<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-chile-punta-arenas-puerto-natales"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Punta Arenas and Puerto Natales<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-chile-punta-arenas-puerto-natales">The road from Ushuaia on October 22, 2017: a ferry across the Strait of Magellan, an evening on the Punta Arenas waterfront, and a stop in Puerto Natales, the gateway town to Torres del Paine.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-chile-torres-del-paine"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Torres del Paine<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-chile-torres-del-paine"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Torres del Paine<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-chile-torres-del-paine">Three days on foot in Torres del Paine National Park, October 25 to 27, 2017: Grey Glacier, a tent, a hostel bed, getting lost on the way back, and why I would not go again.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-chile-pucon"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Pucón<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-chile-pucon"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Pucón<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-chile-pucon">A bus into Chile, a quad that broke down after the Ojos del Caburgua waterfalls, and the climb up Villarrica Volcano to the crater in November 2017, then a night bus to Santiago and a flight to Rosario, with what the rules say today.</span>
                         </div>
                       </div>
                     </details>
                     <details>
-                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Colombia<span class="mb-tag">11 guides</span></summary>
+                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Colombia<span class="mb-tag">11 diaries</span></summary>
                       <div class="mb-kids">
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-bogota"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Bogotá<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-bogota"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Bogotá<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-colombia-bogota">Six days in Bogotá in November 2017: a hostel, a visit to a hostel with a white dog, a birthday at a Hard Rock Cafe, and walks around La Candelaria, with what the sources say today.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-santa-marta"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Taganga<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-santa-marta"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Taganga<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-colombia-santa-marta">A fishing village on the Caribbean coast, visited twice: a hostel on the bay with small boats at sunset, a boat trip to Playa Cristal and a visit to a hill hostel, with what the boats, park fees and hostel listings say today.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-tayrona"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Tayrona National Park<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-tayrona"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Tayrona National Park<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-colombia-tayrona">The walk through Tayrona with a night in a tent, a very large crocodile and snake on film, and the way out toward Minca, with what the fees, closures and animal advice say today.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-minca"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Minca<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-minca"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Minca<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-colombia-minca">Alone in the hills above Santa Marta: a day on a motorbike tour with a stream, a coffee stop, viewpoints and sunsets, and the way on to Palomino, with what the fares and fees say today.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-palomino"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Palomino<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-palomino"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Palomino<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-colombia-palomino">A day on the Caribbean coast at the edge of La Guajira: floating down the river to the sea, a long walk on an empty beach and fishermen at sunset, with what the rules, the road and the prices say today.</span>
                         </div>
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-colombia-costeno-beach" href="colombia-costeno-beach.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Costeño Beach and Santa Marta<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-colombia-costeno-beach" href="colombia-costeno-beach.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Costeño Beach and Santa Marta<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-colombia-costeno-beach">A day on a long, almost empty beach on the road to Palomino, and a sunset at the Santa Marta marina, with what the buses and fares say today.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-cartagena"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Cartagena<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-cartagena"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Cartagena<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-colombia-cartagena">A night shared taxi from Santa Marta, a day and a Christmas tree in Cartagena, and an evening in the mud of the El Totumo volcano, with what the buses and fees say today.</span>
                         </div>
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-colombia-medellin" href="colombia-medellin.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Medellín<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-colombia-medellin" href="colombia-medellin.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Medellín<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-colombia-medellin">Two free walking tours, one through the historic center and one through Comuna 13, a hostel and a dance, with what the tours and the neighbourhood look like today.</span>
                         </div>
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-colombia-guatape-cocorna" href="colombia-guatape-cocorna.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Guatapé and Cocorná<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-colombia-guatape-cocorna" href="colombia-guatape-cocorna.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Guatapé and Cocorná<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-colombia-guatape-cocorna">The lake town of Guatapé, a hostel up a jeep-only road, a scooter ride to a tandem paraglider flight and a boat past the burned house, with what fees and prices say today.</span>
                         </div>
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-colombia-salento" href="colombia-salento.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Salento<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-colombia-salento" href="colombia-salento.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Salento<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-colombia-salento">A short trek between coffee farms, a day in the Cocora Valley among the wax palms and a coffee stop, with what the jeeps, trails and buses say today.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-cali"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Cali and San Cipriano<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-colombia-cali"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Cali and San Cipriano<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-colombia-cali">Christmas lights in Buenaventura, a rail-cart ride to the waterfalls of San Cipriano, a light show in Cali, an evening on the Pance river and a failed attempt to reach Leticia without flying, with what the sources say today.</span>
                         </div>
                       </div>
                     </details>
                     <details>
-                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Brazil<span class="mb-tag">8 guides</span></summary>
+                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Brazil<span class="mb-tag">8 diaries</span></summary>
                       <div class="mb-kids">
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-leticia-tabatinga-manaus"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Leticia, Tabatinga and Manaus<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-leticia-tabatinga-manaus"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Leticia, Tabatinga and Manaus<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-brazil-leticia-tabatinga-manaus">A night in Leticia, a walk to Tabatinga, a hammock bought on the spot and three nights on a slow boat down the Amazon to Manaus, then five days in the city, with what the fares say today.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-fortaleza-jericoacoara"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Fortaleza and Jericoacoara<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-fortaleza-jericoacoara"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Fortaleza and Jericoacoara<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-brazil-fortaleza-jericoacoara">A flight from Manaus, New Year's Eve alone on the rocks by the sea with the fireworks of 2018, and a transfer to Jericoacoara, with what flights and transfers look like today.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-rio"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Rio de Janeiro<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-rio"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Rio de Janeiro<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-brazil-rio">A cheap hostel, a local who took me to the beaches of Joatinga, São Conrado and Grumari, a walk in a favela that I remembered under another name, and a night in Ipanema.</span>
                         </div>
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-brazil-morro" href="brazil-morro-de-sao-paulo.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Morro de São Paulo<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-brazil-morro" href="brazil-morro-de-sao-paulo.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Morro de São Paulo<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-brazil-morro">A flight north, a night at Salvador airport with a lot of mosquitoes, a boat to a village island in Bahia, and three days of beaches.</span>
                         </div>
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-brazil-itacare" href="brazil-itacare.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Itacaré<span class="mb-tag">Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-brazil-itacare" href="brazil-itacare.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Itacaré<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Free sample</span></a>
                           <span class="mb-brief" id="brief-brazil-itacare">A shared apartment with three other travelers, a rented surfboard in hard waves, a small monkey on the way to the beach, and a night ferry.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-iguazu"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Iguazu Falls, Brazilian side<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-iguazu"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Iguazu Falls, Brazilian side<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-brazil-iguazu">A day by a lagoon in Florianópolis, a bus to Foz do Iguaçu, and a day on the Brazilian side of the falls with coatis, a lizard, a tarantula and the walkway over the river.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-iguazu-argentina"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Iguazu Falls, Argentine side<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-iguazu-argentina"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Iguazu Falls, Argentine side<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-brazil-iguazu-argentina">Puerto Iguazú, the Devil's Throat, a caiman under a walkway, and the flight to Buenos Aires, with current prices for the park, the bus and the hostel.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-florianopolis-garopaba"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Florianópolis and Garopaba<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-brazil-florianopolis-garopaba"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Florianópolis and Garopaba<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-brazil-florianopolis-garopaba">The last week of the trip in February 2018: a lagoon and two beaches in Florianópolis, a bus ride that ended in Garopaba instead of Praia do Rosa, the Carnival weekend with a stage in the street, and the end of the trip, with what the buses say today.</span>
                         </div>
                       </div>
                     </details>
                     <div class="mb-item">
-                      <div class="mb-leaf mb-locked" aria-describedby="brief-uruguay"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Uruguay<span class="mb-tag">Members</span></div>
+                      <div class="mb-leaf mb-locked" aria-describedby="brief-uruguay"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Uruguay<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                       <span class="mb-brief" id="brief-uruguay">The ferry from Buenos Aires, Montevideo, Punta del Diablo, Barra de Valizas, Cabo Polonio with its sea lions, La Paloma and a sunset by Laguna de Rocha, with current prices and notes on cash and cards.</span>
                     </div>
                   </div>
                 </details>
                 <details>
-                  <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-globe-asia mb-ico"></i>Middle East<span class="mb-tag">1 guide</span></summary>
+                  <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-globe-asia mb-ico"></i>Middle East<span class="mb-tag">1 diary</span></summary>
                   <div class="mb-kids">
                     <details>
-                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Egypt<span class="mb-tag">1 guide</span></summary>
+                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Egypt<span class="mb-tag">1 diary</span></summary>
                       <div class="mb-kids">
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-egypt-dahab"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Dahab and the Sinai coast<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-egypt-dahab"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Dahab and the Sinai coast<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-egypt-dahab">Four days in April 2019: across the border at Taba on foot, a hut camp in Nuweiba and Dahab, with what my photos can confirm, what I do not know, and what to check today, starting with the Israeli travel warning.</span>
                         </div>
                       </div>
@@ -293,40 +295,40 @@
                   </div>
                 </details>
                 <details>
-                  <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-globe-asia mb-ico"></i>Southeast Asia<span class="mb-tag">8 guides</span></summary>
+                  <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-solid fa-globe-asia mb-ico"></i>Southeast Asia<span class="mb-tag">1 guide, 7 diaries</span></summary>
                   <div class="mb-kids">
                     <details>
-                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Thailand<span class="mb-tag">3 guides</span></summary>
+                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Thailand<span class="mb-tag">1 guide, 2 diaries</span></summary>
                       <div class="mb-kids">
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-thailand-bangkok-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Bangkok, 2019<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-thailand-bangkok-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Bangkok, 2019<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-thailand-bangkok-2019">Five days in August and September 2019: a hostel near Khao San Road, night stalls, a water park, the Grand Palace in borrowed clothes, my old receipts, and what to check today.</span>
                         </div>
                         <div class="mb-item">
-                          <a class="mb-leaf" aria-describedby="brief-thailand-krabi-2019" href="thailand-krabi-2019.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Krabi and Railay, 2019<span class="mb-tag">Guide · Free sample</span></a>
+                          <a class="mb-leaf" aria-describedby="brief-thailand-krabi-2019" href="thailand-krabi-2019.html"><span class="mb-ico"><i class="fa-regular fa-file-lines"></i></span>Krabi and Railay, 2019<span class="mb-kind mb-kind-guide">Guide</span><span class="mb-tag">Guide · Free sample</span></a>
                           <span class="mb-brief" id="brief-thailand-krabi-2019">A guide to four nights in September 2019: Ao Nang beach, a day on Railay with a rope climb to a lagoon, the Krabi Walking Street market and the way to the Phi Phi ferry, with a table of current prices and my advice.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-thailand-phiphi-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Ko Phi Phi, 2019<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-thailand-phiphi-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Ko Phi Phi, 2019<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-thailand-phiphi-2019">Seven nights in September 2019: arriving by ferry, a boat trip, the viewpoint climb, a walk to Long Beach, a quiet day at low tide and the ferry to Phuket, with current notes.</span>
                         </div>
                       </div>
                     </details>
                     <details>
-                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Philippines<span class="mb-tag">5 guides</span></summary>
+                      <summary><i class="fa-solid fa-chevron-right mb-arrow"></i><i class="fa-regular fa-flag mb-ico"></i>Philippines<span class="mb-tag">5 diaries</span></summary>
                       <div class="mb-kids">
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-angeles-banaue-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Singapore, Angeles City and Banaue, 2019<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-angeles-banaue-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Singapore, Angeles City and Banaue, 2019<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-philippines-angeles-banaue-2019">Five days in September 2019: a connection in Singapore, Angeles City, a night bus north to Banaue in a tropical depression, and a flight to Palawan, with current notes.</span>
                         </div>
                         <div class="mb-item">
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-puerto-princesa-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Puerto Princesa and Sabang, 2019<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-puerto-princesa-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Puerto Princesa and Sabang, 2019<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-philippines-puerto-princesa-2019">Two days in September 2019: a rented scooter, the Baywalk, the crocodile center and a ride north to Sabang, with current notes.</span>
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-port-barton-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Sabang to Port Barton, 2019<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-port-barton-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Sabang to Port Barton, 2019<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-philippines-port-barton-2019">One travel day in September 2019: a morning on Sabang beach, the scooter ride back to the airport area, a bus to Port Barton and the first evening there, with current notes.</span>
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-nacpan-el-nido-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Nacpan and El Nido, 2019<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-nacpan-el-nido-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Nacpan and El Nido, 2019<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-philippines-nacpan-el-nido-2019">Four days in September 2019: a bus to Nacpan Beach, a scooter to El Nido and Lio, a few-hours swim to Seven Commando Beach, a paid boat back and the way out of Palawan, with current notes.</span>
-                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-siargao-general-luna-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Siargao, General Luna, 2019<span class="mb-tag">Members</span></div>
+                          <div class="mb-leaf mb-locked" aria-describedby="brief-philippines-siargao-general-luna-2019"><span class="mb-ico"><i class="fa-solid fa-lock"></i></span>Siargao, General Luna, 2019<span class="mb-kind mb-kind-diary">Diary</span><span class="mb-tag">Members</span></div>
                           <span class="mb-brief" id="brief-philippines-siargao-general-luna-2019">Six days, September 28 to October 3, 2019: arriving in General Luna, live music, cooking at the hostel, a rented surfboard, beaches at low tide, a cable wakepark, a ride north to a sunset and a day of boats around Del Carmen, a bridge over a river and the way back through Angeles to Hanoi, with current prices.</span>
                         </div>
                       </div>
